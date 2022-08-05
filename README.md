@@ -12,6 +12,11 @@ Powered by [watchdog](https://github.com/gorakhargosh/watchdog) and [subliminal]
 $ docker pull queeup/subtitle-monitor
 ```
 
+**_Pull from ghcr.io:_**
+```
+$ docker pull ghcr.io/queeup/subtitle-monitor
+```
+
 **_Volumes:_**
  - `-v cache:/cache`
 
