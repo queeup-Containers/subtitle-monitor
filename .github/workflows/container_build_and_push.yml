@@ -4,12 +4,12 @@ name: Publish Container image
 on:
   push:
     branches:
-      - main
+      - latest
     paths:
       - '**Dockerfile**'
   pull_request:
     branches:
-      - main
+      - latest
     paths:
       - '**Dockerfile**'
   workflow_dispatch:
