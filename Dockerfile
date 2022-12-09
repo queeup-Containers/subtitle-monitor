@@ -2,7 +2,7 @@ FROM python:alpine3.14 AS base
 
 FROM base AS builder
 
-ARG VERSION=2.1.9
+ARG VERSION=2.2.0
 
 RUN apk add --no-cache unrar &&\
     pip install --no-cache-dir \
