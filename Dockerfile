@@ -2,7 +2,7 @@ FROM python:alpine3.14 AS base
 
 FROM base AS builder
 
-ARG VERSION=3.0.0
+ARG WATCHDOG_VERSION=4.0.0
 
 RUN apk add --no-cache unrar &&\
     pip install --no-cache-dir \
@@ -10,7 +10,7 @@ RUN apk add --no-cache unrar &&\
                 --no-warn-script-location \
                 --disable-pip-version-check \
                 --prefix=/build \
-                subliminal watchdog[watchmedo]==${VERSION} &&\
+                subliminal watchdog[watchmedo]==${WATCHDOG_VERSION} &&\
     find /build -depth \
         \( \
             \( -type d -a \( -name test -o -name tests -o -name idle_test \) \) \
