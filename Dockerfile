@@ -2,7 +2,7 @@ FROM python:3.12-alpine AS base
 
 FROM base AS builder
 
-ARG SUBLIMINAL_VERSION=2.2.0
+ARG SUBLIMINAL_VERSION=2.2.1
 ARG WATCHDOG_VERSION=4.0.1
 
 RUN pip install --no-cache-dir \
